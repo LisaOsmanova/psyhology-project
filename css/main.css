@@ -1,0 +1,96 @@
+:root {
+    --black-900:#2A2B2E;
+}
+
+@font-face {
+    font-family: 'Zen Antique Soft';
+    src: url(../fonts/ZenAntiqueSoft-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Manrope-Regular';
+    src: url(../fonts/Manrope-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Manrope-SemiBold';
+    src: url(../fonts/Manrope-SemiBold.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Manrope-ExtraBold';
+    src: url(../fonts/Manrope-ExtraBold.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.title-xl {
+    font-family: 'Zen Antique Soft';
+    font-size: 48px;
+    line-height: 1.2;
+    color: var(--black-900);
+}
+
+.title-lg {
+    font-family: 'Zen Antique Soft';
+    font-size: 40px;
+    line-height: 1.3;
+    color: var(--black-900);
+}
+
+.title-md {
+    font-family: 'Zen Antique Soft';
+    font-size: 32px;
+    line-height: 1.3;
+    color: var(--black-900);
+}
+
+.title-sm {
+    font-family: 'Manrope-SemiBold';
+    font-size: 24px;
+    line-height: 1.5;
+    color: var(--black-900);
+}
+
+.title-xs {
+    font-family: 'Manrope-SemiBold';
+    font-size: 20px;
+    line-height: 1.6;
+    color: var(--black-900);
+}
+
+.subtitle {
+    font-family: 'Manrope-SemiBold';
+    font-size: 18px;
+    line-height: 1.5;
+    color: var(--black-900);
+}
+
+.paragraph-lg {
+    font-family: 'Manrope-Regular';
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--black-900);
+}
+
+.paragraph-md {
+    font-family: 'Manrope-Regular';
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--black-900);
+}
+
+.paragraph-sm {
+    font-family: 'Manrope-Regular';
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--black-900);
+}
+
+
