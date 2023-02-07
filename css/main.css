@@ -1,5 +1,23 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 :root {
     --black-900:#2A2B2E;
+    --black-300:#BABDC2;
+    --black-200:#D7D8DB;
+    --black-100: #E8E9EA;
+    --green-900:#386770;
+    --green-300:#A7C1C7;
+    --green-600: #4B7982;
+    --green-100:#E1EDF0;
+    --green-700:#40717A;
+    --white:#FFFFFF;
+    --yellow-100: #FAFAEB;
+    --yellow-200: #F5F5D3;
+    --yellow-300: #F0F0C0;
+    --red-800: #E25151;
+
 }
 
 @font-face {
@@ -26,6 +44,13 @@
 @font-face {
     font-family: 'Manrope-ExtraBold';
     src: url(../fonts/Manrope-ExtraBold.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Manrope-Medium';
+    src: url(../fonts/Manrope-Medium.ttf) format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -88,4 +113,269 @@ h1, h2, h3, h4, h5, p, span {
     line-height: 1.7;
 }
 
+.icon-sm {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+}
+
+.icon-md {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+}
+
+.icon-lg {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+}
+
+.icon-xl {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+}
+
+.icon-sm svg,
+.icon-md svg,
+.icon-xl svg {
+    width: 100%;
+    height: 100%;
+}
+
+
+.icon-black svg path {
+    stroke: var(--black-900);
+}
+
+.icon-green svg path {
+    stroke: var(--green-800);
+}
+
+.icon-gray svg path {
+    stroke: var(--black-300);
+}
+
+.icon-white svg path {
+    stroke: var(--white);
+}
+
+.icon-light-green svg path {
+    stroke: var(--green-300);
+}
+
+.wrapp {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: #386770;
+}
+
+.button {
+    align-items: center;
+    display: inline-flex;
+    font-family: 'Manrope-ExtraBold';
+    border-width: 0;
+}
+
+.button svg {
+    fill: currentColor;
+    stroke: currentColor;
+}
+
+.button span {
+    color: inherit;
+}
+
+/* style */
+
+.button-primary {
+    color: var(--white);
+    background: var(--green-900);
+}
+
+.button-primary:hover {
+    background: var(--green-700);
+    cursor: pointer;
+}
+
+.button-primary:active {
+    background: var(--green-600);
+}
+
+.button-primary:disabled {
+    background: var(--green-300);
+    color: var(--green-100);
+    cursor: no-drop;
+}
+
+
+
+.button-secondary {
+    color: var(--green-900);
+    background: var(--green-100);
+    transition: box-shadow .3s linear;
+}
+
+.button-secondary:not(:disabled):hover {
+    box-shadow: 0 0 0 1px var(--green-900); 
+    cursor: pointer;
+}
+
+.button-secondary:not(:disabled):active {
+    box-shadow: 0 0 0 2px var(--green-900); 
+    
+}
+
+.button-secondary:disabled {
+    color: var(--green-300);
+    cursor: no-drop;
+}
+
+
+
+.button-tertiary {
+    color: var(--green-900);
+    background: var(--yellow-100);
+}
+
+.button-tertiary:not(:disabled):hover {
+    background: var(--yellow-200);
+    cursor: pointer;
+}
+
+.button-tertiary:not(:disabled):active {
+    background: var(--yellow-300);
+}
+
+.button-tertiary:disabled {
+    background: var(--black-100);
+    color: var(--black-300);
+
+}
+
+/* size */
+    
+.button-lg{
+    padding: 20px 52px;
+    border-radius: 48px;
+    font-size: 16px;
+    line-height: 1.5;
+    gap: 0 16px;
+}
+
+.button-md {
+    padding: 16px 32px;
+    border-radius: 48px;
+    gap: 0 16px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.button-sm {
+    padding: 12px 28px;
+    border-radius: 48px;
+    gap: 0 12px;
+    font-size: 16px;
+    font-weight: 1.5;
+}
+
+/* Input */
+
+.width {
+    width: 440px;
+    background: var(--white);
+}
+
+.textfield {
+    position: relative;
+    background: inherit;
+}
+
+.textfield-label {
+    position: absolute;
+    left: 21px;
+    top: -11px;
+    background: inherit;
+    color: var(--green-900);
+    font-family: 'Manrope-Medium';
+    font-size: 12px;
+    line-height: 1.5;
+    padding: 0 5px;
+}
+
+.textfield-control {
+    padding: 14px 50px 14px 24px;
+    box-shadow: inset 0 0 0 1px var(--green-900);
+    border-radius: 24px;
+    font-family: 'Manrope-Regular';
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--green-900);
+    width: 100%;
+    border: none;
+    outline: none;
+    transition: box-shadow .3s linear;
+    background: inherit;
+}
+
+.textfield-control::placeholder {
+    color: var(--green-900);
+}
+
+.textfield-control:focus {
+    box-shadow: inset 0 0 0 2px var(--green-900);
+}
+
+.textfield-control:not(:empty) {
+    box-shadow: inset 0 0 0 2px var(--green-900);
+}
+
+.textfield-control:disabled {
+    box-shadow: inset 0 0 0 1px var(--black-200);
+    color: var(--black-200);
+}
+
+.textfield-control:disabled + .textfield-label {
+    color: var(--black-200);
+}
+
+.textfield-control:disabled::placeholder {
+    color: var(--black-200);
+}
+
+.textfield-control:invalid {
+    box-shadow: inset 0 0 0 1px var(--red-800);
+    color: var(--red-800);
+}
+
+.textfield-control:invalid + .textfield-label {
+    color: var(--red-800);
+}
+
+.textfield-error-icon {
+    display: none;
+    position: absolute;
+    top: 14px;
+    right: 27px;
+}
+
+.textfield-control:invalid ~ .textfield-error-icon {
+    display: block;
+}
+
+.textfield-error-text {
+    display: none;
+}
+
+.textfield-control:invalid ~ .textfield-error-text {
+    display: inline-block;
+    font-family: 'Manrope-Medium';
+    font-size: 12px;
+    line-height: 1.5;
+    color: var(--red-800);
+    margin-top: 8px;
+    margin-left: 24px;
+}
 
