@@ -8,10 +8,14 @@
     --black-200:#D7D8DB;
     --black-100: #E8E9EA;
     --green-900:#386770;
+    --green-800: #3D6C75;
+    --green-400: #7A9499;
     --green-300:#A7C1C7;
     --green-600: #4B7982;
     --green-100:#E1EDF0;
     --green-700:#40717A;
+    --green-200:#CAE1E6;
+    --green-50: #F1F9FB;
     --white:#FFFFFF;
     --yellow-100: #FAFAEB;
     --yellow-200: #F5F5D3;
@@ -378,4 +382,235 @@ h1, h2, h3, h4, h5, p, span {
     margin-top: 8px;
     margin-left: 24px;
 }
+
+/* article */
+
+.article {
+    width: 360px;
+}
+
+.article-pic {
+    width: 100%;
+    margin-bottom: 24px;
+}
+
+.article-time {
+    font-family:'Manrope-Regular';
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--green-900);
+    margin-bottom: 8px;
+}
+
+.article-title {
+    font-family: 'Zen Antique Soft';
+    font-size: 28px;
+    line-height: 1.3;
+    margin: 0 0 24px 0;
+    color: var(--black-900);
+}
+
+.article-description {
+    font-family: 'Manrope-Regular';
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--black-900);
+}
+
+.article:hover .article-title{
+    text-decoration-line: underline;
+    color: var(--green-900);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 5px;
+}
+
+/* services */
+
+.service-wrap {
+    width: 552px;
+}
+
+.service {
+    width: 100%;
+    padding: 48px;
+}
+
+.service-title {
+    font-family: 'Zen Antique Soft';
+    font-size: 32px;
+    line-height: 1.3;
+    margin: 0 0 24px 0;
+}
+
+.service-description {
+    font-family: 'Manrope-Regular';
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0 0 48px 0;
+}
+
+.price-value {
+    font-family: 'Zen Antique Soft';
+    font-size: 32px;
+    line-height: 1.3;
+}
+
+.price-hour {
+    font-family: 'Manrope-Regular';
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.service-green-800 {
+    background: var(--green-800);
+}
+
+.service-green-800 .service-title {
+    color: var(--white);
+}
+
+.service-green-800 .service-description {
+    color: var(--green-300);
+}
+
+.service-green-800 .price-value {
+    color: var(--white);
+}
+
+.service-green-800 .price-hour {
+    color: var(--green-300);
+}
+
+
+
+.service-green-050 {
+    background: var(--green-50);
+}
+
+.service-green-050 .service-title {
+    color: var(--green-900);
+}
+
+.service-green-050 .service-description {
+    color: var(--green-900);
+}
+
+.service-green-050 .price-value {
+    color: var(--green-900);
+}
+
+.service-green-050 .price-hour {
+    color: var(--green-300);
+}
+
+
+.service-white {
+    background: var(--white);
+}
+
+.service-white .service-title {
+    color: var(--green-900);
+}
+
+.service-white .service-description {
+    color: var(--green-900);
+}
+
+.service-white .price-value {
+    color: var(--green-900);
+}
+
+.service-white .price-hour {
+    color: var(--black-300);
+}
+
+
+.service-green-900 {
+    background: var(--green-900);
+}
+
+.service-green-900 .service-title {
+    color: var(--white);
+}
+
+.service-green-900 .service-description {
+    color: var(--white);
+}
+
+.service-green-900 .price-value {
+    color: var(--white);
+}
+
+.service-green-900 .price-hour {
+    color: var(--black-300);
+}
+
+.service-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* checkbox */
+
+
+.checkbox-control {
+    display: none;
+}
+
+.checkbox-view {
+    display: block;
+    border: 1.5px solid var(--black-200);
+    border-radius: 6px;
+    width: 22px;
+    height: 22px;
+}
+
+.checkbox-control:not(:disabled) + .checkbox-view:hover {
+    border-color: var(--green-900);
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.checkbox-control:not(:disabled) + .checkbox-view:active {
+    background-color: var(--green-100);
+    border: 2px solid var(--green-900);
+}
+
+.checkbox-control:not(:disabled) + .checkbox-view:focus {
+    border: 1.5px solid var(--green-600);
+    box-shadow: 0 0 0 3px var(--green-200);
+}
+
+
+.checkbox-control:checked + .checkbox-view {
+    background-image: url(../assets/check.svg);
+    background-size: 10px 8px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--green-600);
+    border-color: var(--green-600);
+}
+
+.checkbox-control:checked + .checkbox-view:hover { 
+    background-color: var(--green-900);
+    border-color: var(--green-900);
+}
+
+.checkbox-control:checked + .checkbox-view:active {
+    background-color: var(--green-400);
+    border-color: var(--green-400);
+}
+
+.checkbox-control:checked + .checkbox-view:focus {
+    background-color: var(--green-600);
+    border-color: var(--green-600);
+}
+
+.checkbox-control:checked:disabled + .checkbox-view{
+    background-color: var(--green-200);
+    border-color: var(--green-200);
+}
+
+
 
