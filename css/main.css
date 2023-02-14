@@ -20,6 +20,7 @@
     --yellow-100: #FAFAEB;
     --yellow-200: #F5F5D3;
     --yellow-300: #F0F0C0;
+    --yellow-400: #E3E3CC;
     --red-800: #E25151;
     --red-100: #F2DADA;
 
@@ -66,6 +67,23 @@ h1, h2, h3, h4, h5, p, span {
 
 p {
     margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.container {
+    max-width: 1158px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
 .title-xl {
@@ -153,27 +171,6 @@ p {
     height: 100%;
 }
 
-
-.icon-black svg path {
-    stroke: var(--black-900);
-}
-
-.icon-green svg path {
-    stroke: var(--green-800);
-}
-
-.icon-gray svg path {
-    stroke: var(--black-300);
-}
-
-.icon-white svg path {
-    stroke: var(--white);
-}
-
-.icon-light-green svg path {
-    stroke: var(--green-300);
-}
-
 .wrapp {
     display: inline-block;
     width: 24px;
@@ -189,8 +186,8 @@ p {
 }
 
 .button svg {
-    fill: currentColor;
-    stroke: currentColor;
+    /* fill: currentColor; */
+    /* stroke: currentColor; */
 }
 
 .button span {
@@ -705,4 +702,103 @@ p {
     color: var(--red-800);
 }
 
+/* header */
 
+.header {
+    padding: 16px 0;
+}
+
+.container-header {
+    display: flex;
+    align-items: center;
+}
+
+.logo-link {
+    margin-right: auto;
+}
+
+.nav-item:not(:first-child) {
+    margin-left: 32px;
+}
+
+.header-button {
+    margin-left: 48px;
+}
+
+.language-selection-wrapp {
+    margin-left: 24px;
+}
+
+.nav-list {
+    display: flex;
+}
+
+.nav-link { 
+    color: var(--black-900);
+}
+
+.language-selection:checked + .language-selection-label {
+    color: var(--green-900);
+}
+
+.language-selection:checked + .language-selection-label svg {
+    transform: rotate(180deg);
+}
+
+.language-selection:checked + .language-selection-label svg path { 
+    stroke: var(--green-900);
+}
+
+/* introduce */
+.left-column,
+.right-column {
+    width: 50%;
+    flex: 1 1 50%;
+}
+
+.introducing {
+    padding: 120px 0;
+    background-color: var(--yellow-100);
+}
+
+.introducing-left-column {
+    padding-right: 30px;
+}
+
+.container-introdusing {
+    display: flex;
+}
+
+.introducing-title {
+    display: block;
+    margin: 0 0 48px 0;
+}
+
+.introducing-goal {
+    border-bottom: 1px solid var(--yellow-400);
+    border-top: 1px solid var(--yellow-400);
+    padding: 32px 0;
+    margin-bottom: 32px;
+}
+
+.introdusing-principles {
+    margin-bottom: 48px;
+}
+
+.portrait {
+    width: 100%;
+}
+
+.button-wrapper {
+    display: inline-block;
+    position: relative;
+}
+
+.book-tip {
+    position: absolute;
+    right: -140px;
+    top: 35px;
+    width: 100px;
+    height: 76px;
+    background-image: url(../assets/Frame\ 1869.svg);
+}
