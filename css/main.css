@@ -61,6 +61,10 @@
     font-style: normal;
 }
 
+body {
+    margin: 0;
+}
+
 h1, h2, h3, h4, h5, p, span {
     color: var(--black-900);
 }
@@ -120,6 +124,13 @@ ul {
     font-family: 'Manrope-SemiBold';
     font-size: 18px;
     line-height: 1.5;
+}
+
+.subtitle-underline {
+    font-family: 'Manrope-SemiBold';
+    font-size: 18px;
+    line-height: 1.6;
+    text-decoration-line: underline;
 }
 
 .paragraph-lg {
@@ -801,4 +812,80 @@ ul {
     width: 100px;
     height: 76px;
     background-image: url(../assets/Frame\ 1869.svg);
+}
+
+/* serviice */
+
+.services {
+    padding: 120px 0 140px 0;
+    background-color: var(--green-900);
+}
+
+.container-service-item {
+    width: 50%;
+    padding: 12px;
+}
+
+.container-services {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -12px;
+    margin-right: -12px;
+}
+
+.services-header {
+    text-align: center;
+    color: var(--white);
+    margin: 0 0 64px 0;
+}
+
+.services-button-icon svg path {
+    fill: var(--green-900)
+}
+
+.services-button-wrapper {
+    text-align: center;
+    margin-top: 64px;
+}
+
+/* education */
+
+.education-header {
+    margin: 120px 0 64px 0;
+}
+
+.education-link {
+    color: var(--black-900);
+}
+
+.education-list-item {
+    position: relative;
+    padding: 48px 0 48px 56px;
+    border-top: 1px solid var(--black-100);
+}
+
+.education-list {
+    margin-right: 120px;
+}
+
+.education-list-item::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 11px;
+    top: 59px;
+    width: 10px;
+    height: 10px;
+    background-color: var(--green-900);
+    border-radius: 50%;
+}
+
+.education-list-item::after {
+    content: '';
+    display: inline-block;
+    width: 21px;
+    height: 21px;
+    background: url(../assets/link\ arrow.svg) center no-repeat;
+    transform: translateY(5px);
+    margin-left: 5px;
 }
