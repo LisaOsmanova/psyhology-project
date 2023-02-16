@@ -850,8 +850,12 @@ ul {
 
 /* education */
 
+.education-container {
+    display: flex;
+}
+
 .education-header {
-    margin: 120px 0 64px 0;
+    margin: 120px 0 64px 160px;
 }
 
 .education-link {
@@ -888,4 +892,89 @@ ul {
     background: url(../assets/link\ arrow.svg) center no-repeat;
     transform: translateY(5px);
     margin-left: 5px;
+}
+
+.right-column-header {
+    margin: 0 0 48px 0;
+}
+
+.education-paragraph {
+    margin-bottom: 24px;
+}
+
+.education-bachground {
+    width: 100%;
+    height: 650px;
+    background: url(../assets/education.svg), url(../assets/Vector\ 15.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+}
+
+.education-bachground {
+    margin-top: -250px;
+}
+
+.sertificates {
+    padding: 120px 0;
+    background-color: var(--green-50);
+}
+
+.sertiificates-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 24px;
+}
+
+.sertificate-button-green900 {
+    border: none;
+    outline: none;
+    background-color: var(--green-50);
+}
+
+.sertificate-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 48px;
+}
+
+/* blog */
+
+.blog {
+    padding: 120px 0;
+}
+
+.blog-header {
+    margin: 0;
+    text-align: center;
+}
+
+.article-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 24px;
+}
+
+.articles {
+    margin-top: 64px;
+}
+
+.blog-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 64px;
+}
+
+.blog-link-text {
+    font-family: 'Manrope-ExtraBold';
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--green-900);
+}
+
+.blog-button-icon {
+    margin-left: 10px;
 }
