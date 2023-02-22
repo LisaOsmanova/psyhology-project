@@ -279,7 +279,7 @@ ul {
     border-radius: 48px;
     font-size: 16px;
     line-height: 1.5;
-    gap: 0 16px;
+    gap: 16px 16px;
 }
 
 .button-md {
@@ -494,8 +494,6 @@ ul {
     color: var(--green-300);
 }
 
-
-
 .service-green-050 {
     background: var(--green-50);
 }
@@ -516,7 +514,6 @@ ul {
     color: var(--green-300);
 }
 
-
 .service-white {
     background: var(--white);
 }
@@ -536,7 +533,6 @@ ul {
 .service-white .price-hour {
     color: var(--black-300);
 }
-
 
 .service-green-900 {
     background: var(--green-900);
@@ -628,7 +624,7 @@ ul {
 /* questions */
 
 .wrapper {
-    width: 600px;
+    width: 744px;
 }
 .icon-min {
     display: none;
@@ -670,9 +666,13 @@ ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-top: 1px solid var(--black-100);
+    /* border-bottom: 1px solid var(--black-100); */
+    /* border-top: 1px solid var(--black-100); */
+    /* margin-bottom: 48px; */
+}
+
+.accordion-button:not(:last-of-type) {
     border-bottom: 1px solid var(--black-100);
-    margin-bottom: 48px;
 }
 
 .accordion-body {
@@ -685,7 +685,7 @@ ul {
 }
 
 
-/* notificatin */
+/* notification */
 
 .notification {
     display: flex;
@@ -814,10 +814,10 @@ ul {
     background-image: url(../assets/Frame\ 1869.svg);
 }
 
-/* serviice */
+/* service */
 
 .services {
-    padding: 120px 0 140px 0;
+    padding: 120px 0 120px 0;
     background-color: var(--green-900);
 }
 
@@ -902,7 +902,7 @@ ul {
     margin-bottom: 24px;
 }
 
-.education-bachground {
+.education-background {
     width: 100%;
     height: 650px;
     background: url(../assets/education.svg), url(../assets/Vector\ 15.png);
@@ -911,12 +911,13 @@ ul {
     background-position: bottom;
 }
 
-.education-bachground {
+.education-background {
     margin-top: -250px;
 }
 
-.sertificates {
-    padding: 120px 0;
+.certificates {
+    padding-top: 120px;
+    padding-bottom: 120px;
     background-color: var(--green-50);
 }
 
@@ -927,17 +928,29 @@ ul {
     gap: 0 24px;
 }
 
-.sertificate-button-green900 {
+.certificate-button-green900 {
     border: none;
     outline: none;
     background-color: var(--green-50);
 }
 
-.sertificate-button {
+.certificate-button {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 48px;
+    gap: 0 22px;
+}
+
+.circle {
+    background: var(--green-900);
+    border-radius: 50%;
+    height: 10px;
+    width: 10px;
+}
+
+.circle-light {
+    background: var(--green-200);
 }
 
 /* blog */
@@ -955,9 +968,6 @@ ul {
     display: flex;
     flex-wrap: wrap;
     gap: 0 24px;
-}
-
-.articles {
     margin-top: 64px;
 }
 
@@ -977,4 +987,183 @@ ul {
 
 .blog-button-icon {
     margin-left: 10px;
+}
+
+/* psy-help */
+
+.psy-help-container {
+    display: flex;
+}
+
+.psy-help-picture {
+    display: inline-block;
+    width: 480px;
+    height: 352px;
+    background-image: url(../assets/hands.png);
+}
+
+.psy-help-header {
+    margin: 0 0 24px 0;
+}
+
+.psy-help-description {
+    margin-bottom: 48px;
+}
+
+.psy-help {
+    padding: 120px 0;
+    background-color: var(--yellow-100);
+}
+
+/* questions */
+
+.questions {
+    padding: 120px 0;
+}
+
+.questions-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.questions-header {
+    margin: 0 0 24px 0;
+}
+
+.questions-link {
+    text-decoration: underline;
+    margin-bottom: 64px;
+    color: var(--green-900);
+}
+
+/* footer */
+
+
+.contacts {
+    padding-top: 120px;
+    background-color: var(--green-900);
+}
+
+.navigation-first-part-title{
+    margin: 0;
+    color: var(--white);
+}
+
+.navigation-first-part {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 64px;
+    border-bottom: 1px solid var(--green-600);
+}
+
+.navigation-second-part {
+    margin-top: 89px;
+}
+
+.footer-pic {
+    background-image: url(../assets/footer.png);
+    background-repeat: no-repeat;
+    background-size: 456px 498px;
+}
+
+.first-flex {
+    display: flex;
+    justify-content: flex-end;
+    gap: 24px 0;
+}
+
+.footer-title {
+    margin: 0 0 32px 0;
+}
+
+.footer-list {
+    width: 264px;
+}
+
+.footer-title {
+    color: var(--white);
+}
+
+.footer-list-item {
+    color: var(--green-200);
+    cursor: pointer;
+}
+
+.footer-second-item {
+    position: relative;
+}
+
+.footer-list-point {
+    margin-bottom: 16px;
+}
+
+.footer-contact, .footer-telegram, .footer-adress {
+    padding-left: 35px;
+}
+
+.footer-contact::before {
+    content: '';
+    display: block;
+    width: 24px;
+    height: 24px;
+    left: 0;
+    top: 0;
+    position: absolute;
+    background: url(../assets/phone.svg);
+}
+
+
+.footer-telegram::before {
+    content: '';
+    display: block;
+    width: 24px;
+    height: 24px;
+    left: 0;
+    top: 47px;
+    position: absolute;
+    background: url(../assets/telegram.svg);
+}
+
+.footer-adress::before {
+    content: '';
+    display: block;
+    width: 24px;
+    height: 24px;
+    left: 0;
+    top: 91px;
+    position: absolute;
+    background: url(../assets/location.svg);
+}
+
+.social-media {
+    display: flex;
+    gap: 0 26px;
+}
+
+.second-flex {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 120px 0 60px 0;
+}
+
+.social-media-item {
+    margin-left: auto;
+}
+
+.second-flex-link {
+    text-decoration: underline;
+    color: var(--white);
+}
+
+.second-flex-decor {
+    color: var(--white);
+    margin: 0 5px 0 5px;
+}
+
+.second-flex-info {
+    margin-right: 40px;
+    color: var(--white);
 }
