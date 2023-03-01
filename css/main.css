@@ -462,6 +462,9 @@ ul {
 .service {
     width: 100%;
     padding: 48px;
+    display: flex;
+    flex-direction: column;
+    
 }
 
 .service-title {
@@ -823,7 +826,7 @@ ul {
     top: 35px;
     width: 100px;
     height: 76px;
-    background-image: url(../assets/Frame\ 1869.svg);
+    background-image: url(../assets/Frame1869.svg);
 }
 
 /* service */
@@ -916,7 +919,7 @@ ul {
 .education-background {
     width: 100%;
     height: 650px;
-    background: url(../assets/education.svg), url(../assets/Vector\ 15.png);
+    background: url(../assets/education.svg), url(../assets/Vector15.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: bottom;
@@ -1272,4 +1275,74 @@ ul {
     background-size: cover;
     position: relative;
     z-index: 2;
+}
+
+/* single service */
+
+.individual-consultation {
+    display: flex;
+    margin-top: 80px;
+}
+
+.service-induvidual-consultation {
+    background-color: var(--yellow-100);
+    padding: 24px 0 120px 0;
+}
+
+.individual-consultation-header {
+    margin: 0 0 24px 0;
+}
+
+.individual-consultation-price {
+    padding-bottom: 26px;
+    border-bottom: 1px solid var(--yellow-400);
+}
+
+.individual-consultation-paragraph {
+    margin-top: 24px;
+}
+
+.individual-consultation-button {
+    margin-top: 48px;
+}
+
+.individual-consultation-picture {
+    display: inline-block;
+    background-image: url(../assets/individual-consultation-picture.png);
+    width: 456px;
+    height: 428px;
+}
+
+.other-services-header {
+    margin: 0 0 64px 0;
+    text-align: center;
+}
+
+.other-services-flex {
+    display: flex;
+    flex-wrap:nowrap;
+    gap: 24px 24px;
+    align-items: stretch;
+}
+
+.other-services-wrap {
+    max-width: 360px;
+}
+
+.other-services-article {
+    height: 100%;
+}
+
+.other-articles-value {
+    margin-top: auto;
+}
+
+/* myservice */
+.my-services {
+    padding: 80px 0 120px 0;
+}
+
+.my-services-header {
+    margin: 0 0 64px 0;
+    text-align: center;
 }
