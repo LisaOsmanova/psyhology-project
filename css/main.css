@@ -271,7 +271,8 @@ ul {
 
 
 
-.button-tertiary {
+.
+tertiary {
     color: var(--green-900);
     background: var(--yellow-100);
 }
@@ -1549,4 +1550,60 @@ ul {
 .contacts-map {
     width: 100%;
     height: 460px;
+}
+
+.contacts-list-link {
+    color: var(--black-900);
+}
+
+/* book my time */
+
+.book-button {
+    border: 0;
+    font-family: 'Manrope-ExtraBold';
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--green-900);
+    background-color: var(--yellow-100);
+}
+
+.book-button-text {
+    margin-left: 21px; 
+}
+
+.book-my-time-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 28px 33px 0 33px;
+    background-color: var(--yellow-100);
+}
+
+.book-my-time-close {
+    border: 0;
+    background-color: var(--yellow-100);
+}
+
+.book-my-time-leader {
+    margin: 0 0 32px 0;
+}
+
+.book-my-time-body .container {
+    display: flex;
+}
+
+.book-my-time-indent {
+    padding-top: 70px;
+    padding-left: 120px;
+}
+
+.book-header {
+    margin: 0 0 24px 0;
+}
+
+.book-my-time-body {
+    background-color: var(--yellow-100);
+}
+
+.book-my-time-body-indent {
+    padding: 108px 0 228px 0;
 }
