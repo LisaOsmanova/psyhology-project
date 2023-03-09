@@ -271,8 +271,7 @@ ul {
 
 
 
-.
-tertiary {
+.tertiary {
     color: var(--green-900);
     background: var(--yellow-100);
 }
@@ -1237,7 +1236,7 @@ tertiary {
 
 /* page about me */
 
-.about-me-preamle {
+.about-me-preamble {
     width: 648px;
     padding: 80px 0 120px 0;
 }
