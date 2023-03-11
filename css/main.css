@@ -831,6 +831,10 @@ ul {
     stroke: var(--green-900);
 }
 
+.button-nav {
+    display: none;
+}
+
 /* introduce */
 .left-column,
 .right-column {
@@ -999,6 +1003,10 @@ ul {
 .sertificates-list-image {
     display: block;
     width: 100%;
+}
+
+.certificates-article-item {
+    width: 33.33%; 
 }
 
 .certificate-button-green900 {
@@ -1653,5 +1661,79 @@ ul {
     }
     .social-media-flex {
         padding: 80px 0 64px 0;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .psy-help-container {
+        flex-direction: column;
+    }
+    .psy-help-left-column, .psy-help-right-column {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:950px) {
+    .container-introdusing {
+        flex-direction: column;
+    }
+    .introdusing-right-column {
+        order: 1;
+        width: 100%;
+    }
+    .introducing-left-column {
+        order: 2;
+        width: 100%;
+        text-align: center;
+        margin-top: 40px;
+    }
+    .portrait {
+        display: block;
+        max-width: 456px;
+        margin: 0 auto;
+    }
+    .certificates-article-item:nth-child(1) {
+        display: none;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .article-item {
+        width: 50%;
+        margin-bottom: 40px;
+    }
+    .nav {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        animation: opacity 0.5s linear;
+    }
+    .button-nav {
+        width: 24px;
+        height: 24px;
+        display: block;
+        background: rgba(33, 33, 33, .31);
+    }
+    .nav-item:not(:first-child) {
+        margin: 0;
+    }
+    .nav-list {
+        background: var(--yellow-200);
+        width: 280px;
+        height: 100vh;
+        overflow-y: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 20px 0 30px 30px;
+        animation: slide 0.5s linear;
+    }
+    .nav-item:active{
+        border-bottom: 5px solid var(--green-900);
+    }
+    .nav-checkbox:checked ~ .nav {
+        display: flex;
     }
 }
